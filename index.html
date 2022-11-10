@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>TEXT ANALYSIS PEAUNUTS</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" source="stopwords-es.json"></script>
+  <script src="script.js" type="text/javascript" source="stopwords-es.json"></script>
 </head>
-  
+
 <body>
   <h1>Análisis de texto</h1>
-  
+
   <br>Introduzca un texto para analizarlo:<br>
   <textarea rows=10 cols=50 id="text" name="text"></textarea>
   <p>
-    <button class="count" >Contar</button><!-- TODO-->
-    <button class="letter_index" >Repeticiones de letras</button>
-    <button class="word_index" >Repeticiones de palabras</button>
-    <button class="sentence_index" >Repeticiones de frases</button>
+    <button class="count">Contar</button><!-- TODO-->
+    <button class="letter_index">Repeticiones de letras</button>
+    <button class="word_index">Repeticiones de palabras</button>
+    <button class="sentence_index">Repeticiones de frases</button>
   </p>
   <p>
     <br>Buscar repeticiones que contienen:<br>
     <input type="text" id="search" name="search"><br>
-    <button class="search_letters" >Buscar letras</button>
-    <button class="search_words" >Buscar palabras</button>
-    <button class="search_sentences" >Buscar frases</button>
+    <button class="search_letters">Buscar letras</button>
+    <button class="search_words">Buscar palabras</button>
+    <button class="search_sentences">Buscar frases</button>
   </p>
-  
+
   <pre id="view"></pre>
 
 </body>
-</html>
 
+</html>
